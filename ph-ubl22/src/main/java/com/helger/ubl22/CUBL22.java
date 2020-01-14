@@ -1,5 +1,5 @@
 /**
- * Copyright (C) 2014-2019 Philip Helger (www.helger.com)
+ * Copyright (C) 2014-2020 Philip Helger (www.helger.com)
  * philip[at]helger[dot]com
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -42,8 +42,6 @@ public final class CUBL22
 
   /** The csc namespace URL */
   public static final String XML_SCHEMA_CSC_NAMESPACE_URL = "urn:oasis:names:specification:ubl:schema:xsd:CommonSignatureComponents-2";
-
-  public static final String XSD_UBL_XMLDSIG = "schemas/ubl22/common/UBL-xmldsig-core-schema-2.2.xsd";
 
   @PresentForCodeCoverage
   private static final CUBL22 s_aInstance = new CUBL22 ();

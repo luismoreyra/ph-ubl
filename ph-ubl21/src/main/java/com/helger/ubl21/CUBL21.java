@@ -1,5 +1,5 @@
 /**
- * Copyright (C) 2014-2019 Philip Helger (www.helger.com)
+ * Copyright (C) 2014-2020 Philip Helger (www.helger.com)
  * philip[at]helger[dot]com
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -39,9 +39,6 @@ public final class CUBL21
 
   /** The cec namespace URL */
   public static final String XML_SCHEMA_CEC_NAMESPACE_URL = "urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2";
-
-  @Deprecated
-  public static final String XSD_UBL_XMLDSIG = "schemas/ubl21/common/UBL-xmldsig-core-schema-2.1.xsd";
 
   @PresentForCodeCoverage
   private static final CUBL21 s_aInstance = new CUBL21 ();

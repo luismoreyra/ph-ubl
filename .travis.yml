@@ -14,7 +14,7 @@ Cu34TJGDtbpqbFNWi7B4dG5ASX/tjVJ/xlU3R3Wa6PlcI9k1VgdTgEb43D6dr1i64gHERXIir4Nj++8m
 
 install:
 #  - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V -U -P jdeps
-  - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V -U
+  - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V -U --settings travis-settings.xml
   
 cache:
   directories:
@@ -29,15 +29,15 @@ jobs:
     - stage: test
       jdk: openjdk8
       script:
-        - mvn test -B -P coverage
+        - mvn test -B -P coverage --settings travis-settings.xml
       after_success:
         - mvn deploy --settings travis-settings.xml -DskipTests=true -B -P travis-deploy
         - bash <(curl -s https://codecov.io/bash)
     - stage: test
       jdk: openjdk11
       script:
-        - mvn test -B
+        - mvn test -B --settings travis-settings.xml
     - stage: test
       jdk: openjdk12
       script:
-        - mvn test -B
+        - mvn test -B --settings travis-settings.xml

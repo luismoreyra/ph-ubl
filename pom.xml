@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-    Copyright (C) 2015-2019 Philip Helger (www.helger.com)
+    Copyright (C) 2015-2020 Philip Helger (www.helger.com)
     philip[at]helger[dot]com
 
     Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,10 +22,10 @@
   <parent>
     <groupId>com.helger</groupId>
     <artifactId>parent-pom</artifactId>
-    <version>1.10.9</version>
+    <version>1.11.0</version>
   </parent>
   <artifactId>ph-ubl-parent-pom</artifactId>
-  <version>6.1.3-SNAPSHOT</version>
+  <version>6.2.1-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>ph-ubl-parent-pom</name>
   <description>Base POM to build the ph-ubl projects</description>
@@ -66,12 +66,12 @@
       <dependency>
         <groupId>com.helger</groupId>
         <artifactId>jcodemodel</artifactId>
-        <version>3.2.4</version>
+        <version>3.3.0</version>
       </dependency>
       <dependency>
         <groupId>com.helger</groupId>
         <artifactId>ph-commons-parent-pom</artifactId>
-        <version>9.3.6</version>
+        <version>9.3.9</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
@@ -135,6 +135,16 @@
       </dependency>
       <dependency>
         <groupId>com.helger</groupId>
+        <artifactId>ph-ubl23</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.helger</groupId>
+        <artifactId>ph-ubl23-codelists</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.helger</groupId>
         <artifactId>ph-ubltr</artifactId>
         <version>${project.version}</version>
       </dependency>
@@ -163,6 +173,8 @@
     <module>ph-ubl21-codelists</module>
     <module>ph-ubl22</module>
     <module>ph-ubl22-codelists</module>
+    <module>ph-ubl23</module>
+    <module>ph-ubl23-codelists</module>
     <module>ph-ubltr</module>
     <module>ph-ublpe</module>
   </modules>

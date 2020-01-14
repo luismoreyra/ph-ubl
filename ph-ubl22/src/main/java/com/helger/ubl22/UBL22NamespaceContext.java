@@ -1,5 +1,5 @@
 /**
- * Copyright (C) 2014-2019 Philip Helger (www.helger.com)
+ * Copyright (C) 2014-2020 Philip Helger (www.helger.com)
  * philip[at]helger[dot]com
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,6 +21,8 @@ import javax.xml.XMLConstants;
 
 import com.helger.commons.annotation.Singleton;
 import com.helger.xml.namespace.MapBasedNamespaceContext;
+import com.helger.xsds.xmldsig.CXMLDSig;
+import com.helger.xsds.xmldsig11.CXMLDSig11;
 
 /**
  * The namespace context to be used as the namespace prefix mapper.
@@ -43,6 +45,8 @@ public class UBL22NamespaceContext extends MapBasedNamespaceContext
     addMapping ("cbc", CUBL22.XML_SCHEMA_CBC_NAMESPACE_URL);
     addMapping ("cec", CUBL22.XML_SCHEMA_CEC_NAMESPACE_URL);
     addMapping ("csc", CUBL22.XML_SCHEMA_CSC_NAMESPACE_URL);
+    addMapping ("ds", CXMLDSig.NAMESPACE_URI);
+    addMapping ("ds11", CXMLDSig11.NAMESPACE_URI);
   }
 
   @Nonnull
